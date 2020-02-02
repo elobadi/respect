@@ -1,0 +1,135 @@
+.respect-gallery {
+  img {
+    height: 100%;
+  }
+
+  .slick-slide {
+    opacity: 0.1;
+    height: 330px;
+    @include media-breakpoint-down(xs) {
+      height: 150px;
+    }
+    @include media-breakpoint-between(xs, sm) {
+      height: 250px;
+    }
+  }
+
+  .slick-active,
+  .slick-center {
+    position: relative;
+    width: 700px;
+    opacity: 1;
+
+    img {
+      margin: 0 auto;
+    }
+    @include media-breakpoint-down(sm) {
+      width: 100px;
+
+      img {}
+    }
+  }
+}
+
+button {
+  &.slick-next,
+  &.slick-prev {
+    position: absolute;
+    display: block;
+    height: 35px;
+    width: 35px;
+    font-size: 1rem;
+    background: #fff;
+    color: #818182;
+    top: 50%;
+    border-radius: 50%;
+    -webkit-transform: translate(0,-50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0,-50%);
+    z-index: 100;
+    @include media-breakpoint-down(sm) {
+      height: 30px;
+      width: 30px;
+    }
+  }
+
+  &.slick-next {
+    right: 27%;
+    @include media-breakpoint-up(xxl) {
+      right: 28%;
+    }
+    @media only screen and (min-width: 1320px) and (max-width: 1440px) {
+      right: 27%;
+    }
+    @media only screen and (min-width: 1250px) and (max-width: 1320px) {
+      right: 25%;
+    }
+    @media only screen and (min-width: 1200px) and (max-width: 1250px) {
+      right: 23%;
+    }
+    @media only screen and (min-width: 1100px) and (max-width: 1200px) {
+      right: 21%;
+    }
+    @media only screen and (min-width: 1024px) and (max-width: 1100px) {
+      right: 18%;
+    }
+    @include media-breakpoint-only(md) {
+      right: 7%;
+    }
+    @media only screen and (min-width: 700px) and (max-width: 786px) {
+      right: 16%;
+    }
+    @media only screen and (min-width: 425px) and (max-width: 700px) {
+      right: 13%;
+    }
+    @media only screen and (min-width: 400px) and (max-width: 425px) {
+      right: 10%;
+    }
+    @media only screen and (min-width: 350px) and (max-width: 375px) {
+      right: 4%;
+    }
+    @media only screen and (min-width: 320px) and (max-width: 350px) {
+      right: -4%;
+    }
+  }
+
+  &.slick-prev {
+    left: 27%;
+    @include media-breakpoint-up(xxl) {
+      left: 28%;
+    }
+    @media only screen and (min-width: 1320px) and (max-width: 1440px) {
+      left: 27%;
+    }
+    @media only screen and (min-width: 1250px) and (max-width: 1320px) {
+      left: 25%;
+    }
+    @media only screen and (min-width: 1200px) and (max-width: 1250px) {
+      left: 23%;
+    }
+    @media only screen and (min-width: 1100px) and (max-width: 1200px) {
+      left: 21%;
+    }
+    @media only screen and (min-width: 1024px) and (max-width: 1100px) {
+      left: 18%;
+    }
+    @include media-breakpoint-only(md) {
+      left: 7%;
+    }
+    @media only screen and (min-width: 700px) and (max-width: 786px) {
+      left: 16%;
+    }
+    @media only screen and (min-width: 425px) and (max-width: 700px) {
+      left: 13%;
+    }
+    @media only screen and (min-width: 400px) and (max-width: 425px) {
+      left: 10%;
+    }
+    @media only screen and (min-width: 350px) and (max-width: 375px) {
+      left: 4%;
+    }
+    @media only screen and (min-width: 320px) and (max-width: 350px) {
+      left: -4%;
+    }
+  }
+}

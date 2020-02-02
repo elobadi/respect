@@ -1,0 +1,35 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $font__heading;
+	max-width: 540px;
+}
+
+h1,
+h2 {
+	font-weight: 700;
+}
+
+h2 {
+	@include font-size(2rem);
+}
+
+h4 {
+	@include font-size(1.5rem);
+}
+
+h5 {
+	font-size: calc(13px + (23 - 20) * ((100vw - 300px) / (1600 - 300)));
+}
+
+h6 {
+	font-weight: 500;
+	margin-bottom: 1rem;
+}
+
+strong {
+	font-weight: bold;
+}

@@ -1,0 +1,18 @@
+footer {
+  padding-top: 100px;
+  color: #fff;
+  background: url("assets/img/index/rectangle_14.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  a {
+    color: #fff;
+    font-size: calc(10px + (13 - 10) * ((100vw - 300px) / (1600 - 300)));
+  }
+
+  h6 {
+    font-size: calc(10px + (14 - 10) * ((100vw - 300px) / (1600 - 300)));
+    font-weight: bold;
+  }
+}

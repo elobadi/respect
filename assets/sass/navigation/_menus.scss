@@ -1,0 +1,65 @@
+/* Style navbar */
+
+.navbar {
+  background-color: #fff;
+  padding: 3px 6px;
+  border-radius: 0.6rem;
+  font-size: 13px;
+  font-weight: 600;
+  box-shadow: 0 0 12px -2px #ccc;
+
+  .navbar-nav {
+    .nav-item {
+      .nav-link {
+        margin-left: 1.5rem;
+        position: relative;
+        width: max-content;
+      }
+
+      &.active {
+        color: inherit !important;
+
+        .nav-link::after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          background: $color__background-button;
+          height: 4px;
+          border-radius: 10px;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.navbar-container {
+  position: absolute;
+  width: 100%;
+  z-index: 100;
+  left: 0;
+  top: 35px;
+  right: 0;
+}
+
+.navbar-brand {
+  img {
+    height: 40px;
+  }
+}
+
+.donate-btn {
+  background-color: #ece4f9;
+  color: $color__background-button;
+  font-weight: bold;
+  padding: 8px 30px !important;
+  font-size: 13px;
+  border-radius: 30px;
+
+  img {
+    margin-right: 15px;
+    width: 13px;
+  }
+}

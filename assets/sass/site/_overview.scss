@@ -1,0 +1,21 @@
+.overview {
+  p {
+    margin-bottom: 3rem;
+  }
+
+  .fa-check {
+    font-size: calc(10px + (13 - 10) * ((100vw - 300px) / (1600 - 300)));
+    margin-right: 5px;
+  }
+}
+
+.small-t {
+  @include font-size(1.25rem);
+  font-weight: 300;
+  margin-right: 0.5rem;
+  display: inline;
+}
+
+.big-text {
+  margin: 5px 0 0;
+}

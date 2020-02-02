@@ -1,0 +1,95 @@
+/*!
+Theme Name: Respect
+Theme URI: http://underscores.me/
+Author: MOHAMMED ABDULLAH AL-OBADI
+Author URI: http://underscores.me/
+Description: Description
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: respect
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Respect is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Bootstrap
+# Normalize
+# Typography
+# Elements
+# Forms
+# Navigation
+	## Links
+	## Menus
+# Accessibility
+# Alignments
+# Clearings
+# Site
+	## Footer
+# Infinite scroll
+# Media
+	## Captions
+	## Galleries
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Bootstrap
+--------------------------------------------------------------*/
+@import "bootstrap/bootstrap"; /*--------------------------------------------------------------
+# Variables-site
+--------------------------------------------------------------*/
+@import "variables-site/variables-site";
+@import "mixins/mixins-master"; /*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+@import "normalize"; /*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+@import "typography/typography"; /*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+@import "elements/elements"; /*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+@import "forms/forms"; /*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+@import "navigation/navigation"; /*--------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------*/
+@import "modules/accessibility"; /*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+@import "modules/alignments";
+@import "modules/media-query"; /*--------------------------------------------------------------
+# Clearings
+--------------------------------------------------------------*/
+@import "modules/clearings"; /*--------------------------------------------------------------
+# Site
+--------------------------------------------------------------*/
+@import "site/footer";
+@import "site/hero";
+@import "site/pricing";
+@import "site/overview";
+@import "site/contact";
+@import "site/about-us";
+@import "site/news";
+@import "site/contact-page";
+@import "site/slider-gallery"; /*--------------------------------------------------------------
+# Infinite scroll
+--------------------------------------------------------------*/
+@import "modules/infinite-scroll"; /*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+@import "media/media"; /*--------------------------------------------------------------
+# slick
+--------------------------------------------------------------*/
+@import "slick/slick"; // @import "slick/slick-theme";

@@ -1,0 +1,52 @@
+.f3-bcolor {
+  background-color: #f3f3f3;
+}
+
+.f0-bcolor {
+  background-color: #f0f0f1;
+}
+
+.e6-bcolor {
+  background-color: #e6e5e7;
+}
+
+.p3-bcolor {
+  background-color: #937ac3;
+  color: #fff;
+}
+
+.shadow-hover {
+  position: relative;
+}
+
+.m-t-6 {
+  margin-top: 6rem;
+}
+
+.m-t-5 {
+  margin-top: 5rem;
+}
+
+.m-t-4 {
+  margin-top: 4rem;
+}
+
+.m-b-15 {
+  margin-bottom: 15rem;
+}
+
+.hight-fit {
+  height: fit-content;
+}
+
+.shadow-hover::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  right: 0;
+  background: $color__background-button;
+  height: 5px;
+  border-radius: 10px;
+  width: 11%;
+}

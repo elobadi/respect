@@ -1,0 +1,83 @@
+.hero-img-row {
+  @include media-breakpoint-up(md) {
+    height: 750px;
+  }
+}
+
+.hero-img {
+  background: url("assets/img/index/shape_15.png");
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+
+  img {
+    position: absolute;
+    width: 55%;
+    height: 68.4%;
+    top: 16%;
+    right: 16%;
+  }
+}
+
+.hero-content {
+  margin-top: 9rem;
+  @include media-breakpoint-down(sm) {
+    text-align: center;
+  }
+}
+
+.icon-heart {
+  width: 25px;
+}
+
+.hero-title {
+  font-size: calc(11px + (65 - 14) * ((100vw - 300px) / (1600 - 300)));
+  @include media-breakpoint-down(sm) {
+    font-size: 53px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  font-weight: 300;
+}
+
+.tabs {
+  ul {
+    @include media-breakpoint-down(sm) {
+      justify-content: center;
+    }
+  }
+
+  a {
+    @include media-breakpoint-down(sm) {
+      font-size: calc(12px + (20 - 10) * ((100vw - 300px) / (1600 - 300)));
+    }
+    font-size: calc(10px + (16 - 10) * ((100vw - 300px) / (1600 - 300)));
+    color: #6a6675;
+    padding: 0 1.5rem;
+
+    &.active {
+      font-weight: bold;
+      color: $color__background-button;
+    }
+    @include media-breakpoint-between(sm, md) {
+      padding: 0 0.5rem;
+    }
+    @include media-breakpoint-down(xs) {
+      padding: 0 0.5rem;
+    }
+  }
+}
+
+.hero-button {
+  padding: 0.7rem 4rem;
+}
+
+.explore-title {
+  width: fit-content;
+
+  .shadow-hover::after {
+    width: 35%;
+  }
+}

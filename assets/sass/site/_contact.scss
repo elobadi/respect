@@ -1,0 +1,113 @@
+.contact {
+  background-image: url("assets/img/index/shape_23_copy.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  margin-bottom: -110px;
+  padding-bottom: 140px;
+  padding-top: 37px;
+}
+
+.info-title {
+  margin: 2rem 0;
+
+  .shadow-hover::after {
+    width: 19%;
+  }
+}
+
+.info-heading {
+  margin: 2rem 0;
+  @include media-breakpoint-down(sm) {
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+  }
+
+  h1 {
+    font-family: $font__heading;
+    font-weight: 300;
+    font-size: calc(20px + (50 - 21) * ((100vw - 300px) / (1600 - 300)));
+    @include media-breakpoint-down(sm) {
+      font-size: 40px;
+    }
+    margin: 0;
+  }
+}
+
+.info-icon {
+  img {
+    padding: 60% 0;
+    width: 35%;
+    @include media-breakpoint-down(md) {
+      width: 100%;
+    }
+  }
+}
+
+.info-text {
+  margin-right: 9rem;
+  @include media-breakpoint-down(md) {
+    margin-right: 0;
+  }
+
+  .phone-num {
+    color: $color__background-button;
+    font-weight: 400;
+    font-size: calc(13px + (20 - 13) * ((100vw - 300px) / (1600 - 300)));
+  }
+}
+
+.map-info,
+.respect-form {
+  background-color: #fff;
+  box-shadow: 0 0 44px -15px $color__background-button;
+  padding: 40px;
+  border-radius: 5px;
+
+  .form-control-contact {
+    background-color: #eeeeee;
+  }
+}
+
+.form-heading {
+  h5 {
+    padding: 0 5px;
+  }
+
+  .shadow-hover::after {
+    height: 4px;
+    width: 100%;
+  }
+}
+
+.form-control-contact {
+  padding: 0.375rem 0.75rem;
+  background-clip: padding-box;
+  border-radius: 1rem;
+  display: block;
+  width: 100%;
+  height: calc(1.5em + .75rem + 2px);
+  font-size: calc(13px + (23 - 20) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.form-check {
+  p {
+    @include media-breakpoint-up(lg) {
+      font-size: calc(9px + (13 - 9) * ((100vw - 300px) / (1600 - 300)));
+    }
+  }
+}
+
+form {
+  button {
+    width: 100%;
+    padding: 0.7rem 0;
+  }
+
+  textarea {
+    &.form-control-contact {
+      height: 116px;
+    }
+  }
+}

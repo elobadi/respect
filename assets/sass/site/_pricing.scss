@@ -1,0 +1,80 @@
+.pricing {
+  h1 {
+    margin-bottom: 5rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .shadow-hover::after {
+    bottom: -20px;
+    left: 45%;
+  }
+}
+
+.s-number {
+  background-color: $color__background-button;
+  color: white;
+  padding: 7px 16px 18px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.s-row {
+  border: 1px solid #dcdcdc85;
+  background-color: white;
+  z-index: 100;
+  margin: 0;
+  border-radius: 8px;
+  position: relative;
+  margin-bottom: 2rem;
+  padding: 2rem 2rem 5rem;
+  @include media-breakpoint-down(md) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  h4 {
+    margin-bottom: 2rem;
+  }
+}
+
+.table-row {
+  position: relative;
+  margin-top: -70px;
+  z-index: 100;
+
+  .table {
+    thead {
+      th {
+        font-size: calc(12px + (25 - 20) * ((100vw - 300px) / (1600 - 300)));
+      }
+
+      span {
+        margin-left: 3rem;
+      }
+    }
+
+    tbody {
+      box-shadow: 0 0 14px -1px #ccc;
+
+      th {
+        font-size: calc(12px + (25 - 20) * ((100vw - 300px) / (1600 - 300)));
+        font-weight: 400;
+      }
+    }
+  }
+
+  .fa-check {
+    color: #706c7a;
+  }
+}
+
+.table-lrounded {
+  border-top-left-radius: 8px;
+  border-top: 0;
+}
+
+.table-rrounded {
+  border-top-right-radius: 8px;
+  border-top: 0;
+}
